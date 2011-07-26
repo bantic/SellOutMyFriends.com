@@ -1,0 +1,13 @@
+package_assets: on
+embed_images: off
+
+javascripts:
+  application:
+    - public/javascripts/jquery/jquery.min.js
+    - public/javascripts/jquery/jquery.metadata.js
+    - public/javascripts/rails.js
+    - public/javascripts/application.js
+
+stylesheets:
+  application:
+    - public/stylesheets/reset.css

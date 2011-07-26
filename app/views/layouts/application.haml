@@ -1,0 +1,28 @@
+!!! Strict
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml", "xmlns:fb" => "http://www.facebook.com/2008/fbml", "xmlns:og" => "http://opengraphprotocol.org/schema/"}
+  %head
+    %title
+      Application
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "keywords"}
+
+    / Meta
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}
+    %meta{:content => "noodp", :name => "robots"}
+
+    / Microsoft smarties
+    %meta{:content => "no", "http-equiv" => "ImageResize"}
+    %meta{:content => "no", "http-equiv" => "ImageToolbar"}
+    %meta{:content => "true", :name => "MSSmartTagsPreventParsing"}
+
+    / Icon
+    %link{:href => "/favicon.ico", :rel => "icon", :type => "image/vnd.microsoft.icon"}
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}
+
+    = csrf_meta_tag
+
+    = include_javascripts :application
+    = include_stylesheets :application
+
+  %body
+    = yield
