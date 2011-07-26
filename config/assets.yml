@@ -5,6 +5,7 @@ javascripts:
   application:
     - public/javascripts/jquery/jquery.min.js
     - public/javascripts/jquery/jquery.metadata.js
+    - public/javascripts/underscore.js
     - public/javascripts/rails.js
     - public/javascripts/application.js
 

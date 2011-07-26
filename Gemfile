@@ -9,4 +9,6 @@ gem "factory_girl_rails", :group => :test
 gem "rails3-generators"
 gem "jammit"
 gem "haml"
+gem 'sass'
 gem "haml-rails"
+gem 'barista'
